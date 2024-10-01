@@ -1,0 +1,1 @@
+Your Height is : {Height},Your Weight is : {Weight},Your BMI is : {BMI}
