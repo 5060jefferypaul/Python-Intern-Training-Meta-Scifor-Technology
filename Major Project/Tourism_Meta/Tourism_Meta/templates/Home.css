@@ -1,0 +1,65 @@
+h1{
+    color: black;
+    text-align: center;
+    background-color: brown;
+    border-radius: 20px;
+}
+a{
+    color: aqua;
+    text-decoration: none;
+    margin-left: 30px;
+
+}
+
+body{
+    background-color: indianred;
+    margin: 0%;
+}
+.Exp img{
+    width: 300px;
+    height: 400px;
+}
+.des{
+    background-color: lightgreen;
+}
+.des h2{
+    color: black;
+    text-align: center;
+    background-color: greenyellow;
+    border-radius: 20px;
+    width: 400px;
+}
+.top table{
+    background-color: black;
+}
+.top a{
+    color: white;
+    background-color: black;
+}
+.top td:hover{
+    background-color: rgba(245, 222, 179,0.3);
+}
+.Do table{
+    background-color:black ;
+    text-align: center;
+}
+.Do a{
+    color: white;
+    background-color: black;
+}
+.Do td:hover{
+    background-color: rgba(245, 222, 179,0.3);
+}
+.Do{
+    background-image:url(Image\ 19.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body{
+    background-color: indianred;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-attachment: fixed;
+}

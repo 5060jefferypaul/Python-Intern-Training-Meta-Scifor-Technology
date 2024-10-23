@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Gate</title>
+
+    {% load static %}
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-image: url('{% static "images/Image 18.jpg" %}');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .content-container {
+            color: black;
+            text-align: center;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin-top: 30px;
+        }
+        h1 {
+            color: brown;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .about {
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #f8f9fa;
+        }
+        .social-icons a {
+            color: inherit;
+            margin-right: 15px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'gallery' %}">GALLERY<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Contact Us' %}">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'About Us' %}">ABOUT US</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container content-container">
+        <h1>INDIA GATE</h1>
+        <img src="{% static 'images/Image 18.jpg' %}" alt="India Gate" class="img-fluid" width="300" height="350">
+
+        <h2 class="mt-4" style="color: goldenrod;">About</h2>
+        <p class="about">
+            The India Gate (formerly known as All India War Memorial) is a war memorial located near the Kartavya path on the eastern edge of the "ceremonial axis" of New Delhi, formerly called Rajpath. It stands as a memorial to 84,000 soldiers of the Indian Army who died between 1914 and 1921 in the First World War, in France, Flanders, Mesopotamia, Persia, East Africa, Gallipoli, and elsewhere. Designed by Sir Edwin Lutyens, the gate evokes the architectural style of the memorial arch such as the Arch of Constantine, in Rome, and is often compared to the Arc de Triomphe in Paris, and the Gateway of India in Mumbai.
+        </p>
+        <p>
+            India Gate is counted amongst the largest war memorials in India. Every Republic Day, the Prime Minister pays tribute to the Amar Jawan Jyoti, a structure built beneath the archway, which serves as India's tomb of the unknown soldier.
+        </p>
+
+        <h2>Location Map</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14010.248254604609!2d77.2295097!3d28.612912!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d0b%3A0x717971125923e5d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1693328389688!5m2!1sen!2sin"
+            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted mt-5">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-google"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <section class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Indian Tourism</h6>
+                    <p>Explore the best of Indian tourism through our platform.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Experience India</h6>
+                    <p><a href="https://www.eternalandamans.com/water-sports/scuba-diving-andaman" class="text-reset">Scuba Diving in Andaman</a></p>
+                    <p><a href="https://www.keralatourism.org/destination/backwater/" class="text-reset">Backwaters of Kerala</a></p>
+                    <p><a href="https://www.thrillophilia.com/road-trip-to-ladakh" class="text-reset">Road Trip to Ladakh</a></p>
+                    <p><a href="https://www.thomascook.in/blog/north-east-the-land-of-scenic-beauty" class="text-reset">Beauty of Northeast</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
+                    <p><a href="{% url 'gallery' %}" class="text-reset">Gallery</a></p>
+                    <p><a href="{% url 'Contact Us' %}" class="text-reset">Contact Us</a></p>
+                    <p><a href="{% url 'About Us' %}" class="text-reset">About Us</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                    <p><i class="fas fa-home me-3"></i> Adoor, PO 10012, India</p>
+                    <p><i class="fas fa-envelope me-3"></i> indiatourism@gmail.com</p>
+                    <p><i class="fas fa-phone me-3"></i> 04734 281889</p>
+                    <p><i class="fas fa-print me-3"></i> 9697454521</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

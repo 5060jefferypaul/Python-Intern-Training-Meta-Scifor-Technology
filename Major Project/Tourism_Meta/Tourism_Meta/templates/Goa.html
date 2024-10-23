@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baga Beach (GOA)</title>
+</head>
+{% load static %}
+<style>
+    body {
+        background-image: url('{% static "images/Image 14.jpg" %}');
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div
+        style="color: black;background-color: gray;text-align: center;margin:50px 200px 600px 280px;border-radius: 20px;">
+        <h1 style="color: brown;text-align: center;">Baga Beach (GOA)</h1>
+        <img src='{% static "images/Image 15.jpg" %}'  alt="" width="200px" ;height="250px">
+        <p style="color: goldenrod;">ABOUT</p>
+        <p style="background-color: blueviolet;"> One of the most popular beaches of Goa, Baga Beach is a place not to
+            be missed. This shimmering golden beach lies between the two other popular beaches. It has Anjuna Beach on
+            it one side and Calangute Beach on the other side. This is a perfect beach for all of us who want to be away
+            from the crowd of tourists on the other beaches. This beach is known for its sheer beauty. Its mesmerizing
+            scenic beauty has tranquilizing effect on its visitors. A beautiful scene is created when majestic waves
+            when touch the glittering sand which are surrounded by various palm trees. Its beauty is worth capturing.
+
+            This beach is extremely popular for its salty bath. You can find many tourists enjoying taking a dip into
+            the sea water from time to time as they lounge at the sun beds. The nightlife here is also quite exciting.
+            Baga house famous Café Tito and Cafe Mambo as well, places which are visited by almost every tourists in
+            Goa.
+
+            The Saturday night Flea Market at the Baga beach is extremely famous. Here you will find stalls and small
+            shacks selling almost everything under the sun at affordable prices. Whether you want to take a souvenir
+            home or buy some clothes to jewelry or want to relish some authentic sea-food or just want have a new
+            haircut or get your future revealed by tarot card reader, here you will get ample of choices for everything.
+
+            For accommodation, there are various choices. You can have beach shacks if you are looking for something
+            within low budget. These shacks are located quite close to the beach which allow you o spend as much as time
+            as you want on the beach, as it also reduces the travel time. Tourists can also choose from the three to
+            five star hotels if they want a luxurious stay. Royal Goans Club and the Marinha Douradoa Resort Complex are
+            two of the choices.</p>
+        <p>LOCATION MAP</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7687.3061237175125!2d73.75076855!3d15.55671855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea1cd8a1deff%3A0xba7066c0ee35c1e0!2sBaga%20Beach!5e0!3m2!1sen!2sin!4v1693314492706!5m2!1sen!2sin"
+            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+        <a href="{% url 'home' %}">BACK TO HOME</a>
+    </div>
+</body>
+
+</html>

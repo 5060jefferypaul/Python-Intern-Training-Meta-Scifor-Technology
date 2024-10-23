@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coorg (Karnataka)</title>
+    {% load static %}
+    <style>
+        body {
+            background-image: url('{% static "images/Image 26.jpg" %}');
+            background-size: cover;
+            color: black;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        h4 {
+            color: goldenrod;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'home' %}">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'gallery' %}">GALLERY<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'Contact Us' %}">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'About Us' %}">ABOUT US</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>COORG (KARNATAKA)</h1>
+        <img src='{% static "images/Image 27.jpg" %}' alt="Beautiful scenery of Coorg" width="300" height="350">
+
+
+
+        <h4>ABOUT</h4>
+        <p>Coorg is an alluring hill station in Karnataka, blessed with mesmerizing waterfalls, towering hills, scenic views, and sprawling coffee plantations. Referred to as 'the Scotland of India,' Coorg is located amidst paradisiacal surroundings, offering endless opportunities for tourists to get closer to nature and its wonders. Besides natural beauty, the region is also a renowned cultural hub. Coorg is home to Bylakuppe, India's second-largest Tibetan settlement. With so much to explore and experience, Coorg is a must-visit destination in Karnataka.</p>
+
+        <h4>LOCATION MAP</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498816.2247215367!2d75.77744605000001!3d12.38281425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba5aaa23e0be16b%3A0x50fd1f82359ea370!2sKodagu%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1693330504288!5m2!1sen!2sin"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+
+    </div>
+
+    <footer class="text-center text-lg-start bg-light text-muted mt-5">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-google"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <section class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Indian Tourism</h6>
+                    <p>Explore the best of Indian tourism through our platform.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Experience India</h6>
+                    <p><a href="https://www.eternalandamans.com/water-sports/scuba-diving-andaman" class="text-reset">Scuba Diving in Andaman</a></p>
+                    <p><a href="https://www.keralatourism.org/destination/backwater/" class="text-reset">Backwaters of Kerala</a></p>
+                    <p><a href="https://www.thrillophilia.com/road-trip-to-ladakh" class="text-reset">Road Trip to Ladakh</a></p>
+                    <p><a href="https://www.thomascook.in/blog/north-east-the-land-of-scenic-beauty" class="text-reset">Beauty of Northeast</a></p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
+                    <p><a href="{% url 'gallery' %}" class="text-reset">Gallery</a></p>
+                    <p><a href="{% url 'Contact Us' %}" class="text-reset">Contact Us</a></p>
+                    <p><a href="{% url 'About Us' %}" class="text-reset">About Us</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                    <p><i class="fas fa-home me-3"></i> Adoor, PO 10012, India</p>
+                    <p><i class="fas fa-envelope me-3"></i> indiatourism@gmail.com</p>
+                    <p><i class="fas fa-phone me-3"></i> 04734 281889</p>
+                    <p><i class="fas fa-print me-3"></i> 9697454521</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
